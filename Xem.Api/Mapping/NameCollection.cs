@@ -4,6 +4,11 @@ namespace Xem.Api.Mapping
 {
     public class NameCollection
     {
+        public NameCollection(IDictionary<string, string[]> nameValues)
+        {
+            this.NameValues = nameValues;
+        }
+
         /// <summary>
         /// id - names
         /// </summary>

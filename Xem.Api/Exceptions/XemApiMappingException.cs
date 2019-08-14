@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Xem.Api.Infrastructure.Exceptions
+namespace Xem.Api.Exceptions
 {
     public class XemApiMappingException : Exception
     {

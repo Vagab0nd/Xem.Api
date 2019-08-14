@@ -17,7 +17,7 @@ namespace Xem.Api
         /// </summary>
         /// <param name="id"></param>
         /// <param name="origin"></param>
-        Task<ICollection<MappingCollection>> GetAllMappings(string id, EntityType origin);
+        Task<MappingCollection[]> GetAllMappings(string id, EntityType origin);
 
         /// <summary>
         /// Get all names xem has to offer for origin entity.

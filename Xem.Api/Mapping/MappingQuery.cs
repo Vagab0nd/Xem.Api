@@ -22,6 +22,7 @@ namespace Xem.Api.Mapping
         private MappingQuery(string id, EntityType origin)
         {
             this.Id = id;
+            this.Origin = origin;
         }
 
         /// <summary>

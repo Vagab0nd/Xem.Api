@@ -1,0 +1,17 @@
+C:\Users\Michal\Source\Repos\Xem.Api\Xem.Api.Test.Unit\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Michal\Source\Repos\Xem.Api\Xem.Api.Test.Unit\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Michal\Source\Repos\Xem.Api\Xem.Api.Test.Unit\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Michal\Source\Repos\Xem.Api\Xem.Api.Test.Unit\bin\Debug\netcoreapp2.1\Xem.Api.Test.Unit.deps.json
+C:\Users\Michal\Source\Repos\Xem.Api\Xem.Api.Test.Unit\bin\Debug\netcoreapp2.1\Xem.Api.Test.Unit.runtimeconfig.json
+C:\Users\Michal\Source\Repos\Xem.Api\Xem.Api.Test.Unit\bin\Debug\netcoreapp2.1\Xem.Api.Test.Unit.runtimeconfig.dev.json
+C:\Users\Michal\Source\Repos\Xem.Api\Xem.Api.Test.Unit\bin\Debug\netcoreapp2.1\Xem.Api.Test.Unit.dll
+C:\Users\Michal\Source\Repos\Xem.Api\Xem.Api.Test.Unit\bin\Debug\netcoreapp2.1\Xem.Api.Test.Unit.pdb
+C:\Users\Michal\Source\Repos\Xem.Api\Xem.Api.Test.Unit\obj\Debug\netcoreapp2.1\Xem.Api.Test.Unit.csprojAssemblyReference.cache
+C:\Users\Michal\Source\Repos\Xem.Api\Xem.Api.Test.Unit\obj\Debug\netcoreapp2.1\Xem.Api.Test.Unit.csproj.CoreCompileInputs.cache
+C:\Users\Michal\Source\Repos\Xem.Api\Xem.Api.Test.Unit\obj\Debug\netcoreapp2.1\Xem.Api.Test.Unit.AssemblyInfoInputs.cache
+C:\Users\Michal\Source\Repos\Xem.Api\Xem.Api.Test.Unit\obj\Debug\netcoreapp2.1\Xem.Api.Test.Unit.AssemblyInfo.cs
+C:\Users\Michal\Source\Repos\Xem.Api\Xem.Api.Test.Unit\obj\Debug\netcoreapp2.1\Xem.Api.Test.Unit.dll
+C:\Users\Michal\Source\Repos\Xem.Api\Xem.Api.Test.Unit\obj\Debug\netcoreapp2.1\Xem.Api.Test.Unit.pdb
+C:\Users\Michal\Source\Repos\Xem.Api\Xem.Api.Test.Unit\bin\Debug\netcoreapp2.1\Xem.Api.dll
+C:\Users\Michal\Source\Repos\Xem.Api\Xem.Api.Test.Unit\bin\Debug\netcoreapp2.1\Xem.Api.pdb
+C:\Users\Michal\Source\Repos\Xem.Api\Xem.Api.Test.Unit\obj\Debug\netcoreapp2.1\Xem.Api.Test.Unit.csproj.CopyComplete
