@@ -6,3 +6,6 @@
 /Xem.Api/bin/Debug/netstandard2.0
 /Xem.Api/obj
 /.vs/Xem.Api/DesignTimeBuild/.dtbcache
+/Xem.Api/bin/Release
+/Xem.Api.Test.Integration/obj/Release/netcoreapp2.1
+/Xem.Api.Test.Unit/obj/Release/netcoreapp2.1
