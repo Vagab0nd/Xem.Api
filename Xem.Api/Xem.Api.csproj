@@ -8,7 +8,7 @@
     <Company>Vagab0nd</Company>
     <Description>Contains c# api wrapper for working with the XEM Api.</Description>
     <PackageLicenseExpression></PackageLicenseExpression>
-    <PackageLicenseFile>README.md</PackageLicenseFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/Vagab0nd/Xem.Api</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Vagab0nd/Xem.Api</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
@@ -19,5 +19,12 @@
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
     <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
     <PackageReference Include="System.Net.Http" Version="4.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 </Project>
