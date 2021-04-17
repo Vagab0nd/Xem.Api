@@ -37,7 +37,7 @@ namespace Xem.Api.Test.Integration
         {
             var result = await this.apiClient.GetAllNames(new AllNamesQuery(EntityType.AniDb));
 
-            result.NameValues.Count.Should().Be(772);
+            result.NameValues.Count.Should().BeGreaterOrEqualTo(936);
         }
     }
 }
