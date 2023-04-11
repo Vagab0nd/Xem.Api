@@ -14,7 +14,7 @@
     <RepositoryType>Git</RepositoryType>
     <PackageTags>xem, api</PackageTags>
 	<PackageReleaseNotes>Update dependencies</PackageReleaseNotes>
-	<Copyright>Copyright © 2023 Michal Kurek and Contributors. All rights reserved.</Copyright>
+	<Copyright>Copyright © 2023 Michał Kurek and Contributors. All rights reserved.</Copyright>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />
