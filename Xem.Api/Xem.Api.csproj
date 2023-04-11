@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
     <Authors>Vagab0nd</Authors>
     <Company>Vagab0nd</Company>
     <Description>Contains c# api wrapper for working with the XEM Api.</Description>
@@ -13,6 +13,7 @@
     <RepositoryUrl>https://github.com/Vagab0nd/Xem.Api</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>xem, api</PackageTags>
+	<PackageReleaseNotes>Update dependencies</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
