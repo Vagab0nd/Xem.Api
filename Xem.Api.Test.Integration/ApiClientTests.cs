@@ -13,7 +13,7 @@ namespace Xem.Api.Test.Integration
         [TestInitialize]
         public void Initialize()
         {
-            this.apiClient = new ApiClient("http://thexem.de");
+            this.apiClient = new ApiClient("https://thexem.info");
         }
 
         [TestMethod]
