@@ -1,8 +1,7 @@
-﻿using Microsoft.AspNetCore.WebUtilities;
-using Newtonsoft.Json;
-using System;
+﻿using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Xem.Api.Extensions;
 using Xem.Api.Mapping;
 
 namespace Xem.Api
@@ -24,14 +23,14 @@ namespace Xem.Api
 
         public async Task<NameCollection> GetAllNames(AllNamesQuery query)
         {
-            var uri = QueryHelpers.AddQueryString("/map/allNames", query.GetQueryValues());
+            var uri = "/map/allNames".AddQueryValues(query.GetQueryValues());
             var respone = await this.httpClientWrapper.DoAsync(c => c.GetAsync(uri));
             return await this.GetDataFromResponse<NameCollection>(respone);
         }
 
         public async Task<MappingCollection> GetMapping(MappingQuery query)
         {
-            var uri = QueryHelpers.AddQueryString("/map/single", query.GetQueryValues());
+            var uri = "/map/single".AddQueryValues(query.GetQueryValues());
             var respone = await this.httpClientWrapper.DoAsync(c => c.GetAsync(uri));
             return await this.GetDataFromResponse<MappingCollection>(respone);
         }
