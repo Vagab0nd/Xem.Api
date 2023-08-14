@@ -1,13 +1,14 @@
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Xem.Api.Formatting;
 using Xem.Api.Mapping;
 
-namespace Xem.Api.Test.Unit.Infrastructure
+namespace Xem.Api.Tests.Formatting
 {
     [TestClass]
     public class MappingCollectionJsonConverterTests
     {
-        private readonly MappingCollectionJsonConverter converter = new MappingCollectionJsonConverter();
+        private readonly MappingCollectionJsonConverter converter = new();
 
         [TestInitialize]
         public void Initialize()

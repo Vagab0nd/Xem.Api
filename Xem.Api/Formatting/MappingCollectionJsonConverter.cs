@@ -5,15 +5,15 @@ using System.Collections.Generic;
 using System.Linq;
 using Xem.Api.Mapping;
 
-namespace Xem.Api
+namespace Xem.Api.Formatting
 {
-    public class NameCollectionJsonConverter : JsonConverter
+    public class MappingCollectionJsonConverter : JsonConverter
     {
         public override bool CanWrite { get; } = false;
 
         public override bool CanConvert(Type objectType)
         {
-            return objectType == typeof(NameCollection);
+            return objectType == typeof(MappingCollection);
         }
 
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
@@ -24,9 +24,24 @@ namespace Xem.Api
             {
                 return null;
             }
-            var nameValues = dataValue.Properties().Select(nv => new KeyValuePair<string, string[]>(nv.Name, nv.Value.ToObject<string[]>())).ToDictionary(kvp => kvp.Key, kvp => kvp.Value);
 
-            return new NameCollection(nameValues);            
+            var mappingEntries = dataValue.Properties().Select(me =>
+            {
+                var nameParts = me.Name.Split('_');
+                var entryValues = me.Values().Select(v => v as JProperty);
+                return new MappingEntry
+                {
+                    EntityType = this.GetEntityTypeFromName(nameParts.FirstOrDefault()),
+                    EntityIndex = this.GetEntityIndexFromName(nameParts.LastOrDefault()),
+                    Absolute = this.GetValueFromProperties(entryValues, "absolute"),
+                    Episode = this.GetValueFromProperties(entryValues, "episode"),
+                    Season = this.GetValueFromProperties(entryValues, "season")
+                };
+
+            })
+            .ToList();
+
+            return new MappingCollection(mappingEntries);
         }
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
@@ -46,11 +61,11 @@ namespace Xem.Api
 
         private int GetValueFromProperties(IEnumerable<JProperty> properties, string propertyName)
         {
-            if(!(properties.FirstOrDefault(v => v.Name == propertyName)?.Value is JToken propertyValue))
+            if (!(properties.FirstOrDefault(v => v.Name == propertyName)?.Value is JToken propertyValue))
             {
                 return 0;
             }
-            
+
             return int.TryParse(propertyValue.Value<string>(), out var result) ? result : 0;
         }
     }

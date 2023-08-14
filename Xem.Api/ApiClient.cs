@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Xem.Api.Extensions;
+using Xem.Api.Formatting;
 using Xem.Api.Mapping;
 
 namespace Xem.Api
@@ -38,7 +38,7 @@ namespace Xem.Api
         private async Task<T> GetDataFromResponse<T>(HttpResponseMessage httpResponse)
         {
             var response = await httpResponse.Content.ReadAsAsync<ResponseBase>();
-            return JsonConvert.DeserializeObject<T>((response.Data.ToString()), new MappingCollectionJsonConverter(), new NameCollectionJsonConverter());
+            return JsonConvert.DeserializeObject<T>(response.Data.ToString(), new MappingCollectionJsonConverter(), new NameCollectionJsonConverter());
         }
     }
 }

@@ -39,5 +39,17 @@ namespace Xem.Api.Test.Integration
 
             result.NameValues.Count.Should().BeGreaterOrEqualTo(936);
         }
+
+        [TestMethod]
+        public async Task GetAllNames_should_filtered_by_season_names()
+        {
+            var result = await this.apiClient.GetAllNames(new AllNamesQuery(EntityType.AniDb)
+            {
+                Season = 12,
+                SeasonOperator = CompareOperator.GreaterThan
+            });
+
+            result.NameValues.Count.Should().BeGreaterOrEqualTo(1).And.BeLessThan(10);
+        }
     }
 }

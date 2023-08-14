@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.4.0</Version>
+    <Version>0.4.1</Version>
     <Authors>Michał Kurek</Authors>
     <Company>Vagab0nd</Company>
     <Description>.Net library that provides wrapper for Xross Entity Map (XEM) API.</Description>
@@ -15,7 +15,7 @@
     <RepositoryType>Git</RepositoryType>
     <PackageTags>xem, api</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>  
-	<PackageReleaseNotes>Update dependencies - replace obsolete dependencies.</PackageReleaseNotes>
+	<PackageReleaseNotes>Implement season operator.</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />

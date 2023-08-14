@@ -1,5 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Xem.Api.Formatting;
 
 namespace Xem.Api.Mapping
 {
@@ -39,12 +39,7 @@ namespace Xem.Api.Mapping
 
             if (this.Season.HasValue)
             {
-                var seasonValue = this.Season.ToString();
-                if(this.SeasonOperator.HasValue)
-                {
-                    throw new NotImplementedException("Support for season operator is not yet implemented.");
-                }
-
+                var seasonValue = this.SeasonOperator.HasValue ? $"{this.SeasonOperator.Value.AsString()}{this.Season}" : this.Season.ToString();
                 values.Add("season", seasonValue);
             }
 
