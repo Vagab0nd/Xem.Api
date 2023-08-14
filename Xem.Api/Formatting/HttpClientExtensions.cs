@@ -1,10 +1,11 @@
 ﻿using System.Net.Http;
 using System.Net.Http.Formatting;
 using System.Threading.Tasks;
+using Xem.Api.Formatting;
 
 namespace Xem.Api
 {
-    public static class HttpClientExtensions
+    internal static class HttpClientExtensions
     {
         private static readonly JsonMediaTypeFormatter[] formatters = { new XemJsonMediaTypeFormatter() };
 

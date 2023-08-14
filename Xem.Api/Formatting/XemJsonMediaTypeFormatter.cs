@@ -3,9 +3,9 @@ using Newtonsoft.Json.Serialization;
 using System.Net.Http.Formatting;
 using System.Reflection;
 
-namespace Xem.Api
+namespace Xem.Api.Formatting
 {
-    public class XemJsonMediaTypeFormatter: JsonMediaTypeFormatter
+    public class XemJsonMediaTypeFormatter : JsonMediaTypeFormatter
     {
         public XemJsonMediaTypeFormatter()
         {
@@ -16,7 +16,7 @@ namespace Xem.Api
             };
         }
 
-        private class XemContractResolver: DefaultContractResolver
+        private class XemContractResolver : DefaultContractResolver
         {
             public XemContractResolver()
             {
@@ -27,8 +27,8 @@ namespace Xem.Api
             {
                 var jsProperty = base.CreateProperty(member, memberSerialization);
 
-                jsProperty.Writable = jsProperty.Writable || XemContractResolver.IsPropertyWithSetter(member, true);
-                jsProperty.Readable = jsProperty.Readable || XemContractResolver.IsPropertyWithSetter(member, false);
+                jsProperty.Writable = jsProperty.Writable || IsPropertyWithSetter(member, true);
+                jsProperty.Readable = jsProperty.Readable || IsPropertyWithSetter(member, false);
 
                 return jsProperty;
             }

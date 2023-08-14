@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.Encodings.Web;
 
-namespace Xem.Api.Extensions
+namespace Xem.Api.Formatting
 {
-    public static class StringExtensions
+    internal static class StringExtensions
     {
         public static string AddQueryValues(this string path, IDictionary<string, string> values)
         {
