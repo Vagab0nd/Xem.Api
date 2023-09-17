@@ -1,3 +1,5 @@
+<img title="logo" alt="Logo" src="/Xem.Api/logo.png" width="128"/> 
+
 # Xem.Api
 .Net library that provides wrapper for [Xross Entity Map (XEM) API](https://thexem.info/doc).
 
